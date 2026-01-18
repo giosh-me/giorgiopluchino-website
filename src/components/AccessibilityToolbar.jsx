@@ -31,7 +31,23 @@ const AccessibilityToolbar = () => {
                 aria-label="Opzioni Accessibilità"
             >
                 <span className="sr-only">Accessibilità</span>
-                <Accessibility size={32} strokeWidth={1.5} />
+                <svg
+                    width="32"
+                    height="32"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    strokeWidth="1.8"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                >
+                    <circle cx="12" cy="12" r="10" opacity="0.3" />
+                    <circle cx="12" cy="5" r="1.5" />
+                    <path d="M12 7v6" />
+                    <path d="M5 10c3 0 5 1 7 1s4-1 7-1" />
+                    <path d="M12 13l-5 7" />
+                    <path d="M12 13l5 7" />
+                </svg>
             </button>
 
             {isOpen && (
