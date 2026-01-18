@@ -16,14 +16,11 @@ const Ventures = () => {
                 </div>
             </section>
 
-            {/* Musa Section */}
             <section className="section section-musa text-white">
                 <div className="container split-layout">
                     <div className="venture-info">
                         <span className="venture-label">Creative Tech & Experience</span>
-                        <div className="venture-logo-box mb-4">
-                            <img src="/assets/musa-logo.png" alt="Musa Logo" className="venture-logo-img" />
-                        </div>
+                        <h2 className="text-white">Musa</h2>
                         <p className="text-gray-300">
                             Musa è il parco giochi dell'innovazione. Qui uniamo talent management, eventi dal vivo e brand activation.
                             È dove l'AI incontra l'arte e l'intrattenimento.
@@ -38,7 +35,7 @@ const Ventures = () => {
                         </Button>
                     </div>
                     <div className="venture-visual musa-visual">
-                        {/* Abstract visual placeholder */}
+                        <img src="/assets/musa-logo.png" alt="Musa Logo" className="musa-visual-logo" />
                     </div>
                 </div>
             </section>
