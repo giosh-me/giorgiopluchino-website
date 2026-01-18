@@ -130,4 +130,20 @@
     .hero-actions button {
         width: 100%;
     }
+}/* Logo styling */
+.venture-logo-box {
+  margin-bottom: 20px;
+}
+
+.venture-logo-img {
+  max-width: 200px;
+  height: auto;
+  display: block;
+}
+
+@media (max-width: 768px) {
+  .venture-logo-img {
+    max-width: 150px;
+    margin: 0 auto;
+  }
 }

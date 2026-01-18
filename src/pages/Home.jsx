@@ -91,6 +91,7 @@ const Home = () => {
                 <div className="container">
                     <div className="section-header">
                         <h2>Di cosa mi occupo</h2>
+                        <p>Specializzazione verticale, visione orizzontale.</p>
                     </div>
                     <div className="grid-3">
                         <Card>
@@ -105,6 +106,88 @@ const Home = () => {
                             <h4>Performance & Funnel</h4>
                             <p>Gestione avanzata di Google e Meta Ads, tracciamento granulare e ottimizzazione del tasso di conversione.</p>
                         </Card>
+                    </div>
+                </div>
+            </section>
+
+            {/* Ventures Section */}
+            <section className="section ventures-section">
+                <div className="container">
+                    <div className="section-header">
+                        <h2>Le mie Venture</h2>
+                        <p>Non solo teoria. Applico ciò che insegno nei miei business.</p>
+                    </div>
+                    <div className="ventures-grid">
+                        <Card className="venture-card large-card">
+                            <div className="venture-content">
+                                <div className="venture-tag">Creative Tech</div>
+                                <div className="venture-logo-box">
+                                    <img src="/assets/musa-logo.png" alt="Musa Logo" className="venture-logo-img" />
+                                </div>
+                                <p>La fucina creativa per creator, eventi ed experience indimenticabili. Uniamo talenti e brand.</p>
+                                <Button variant="secondary" onClick={() => window.location.href = '/ventures'} icon>Scopri Musa</Button>
+                            </div>
+                        </Card>
+                        <Card className="venture-card large-card">
+                            <div className="venture-content">
+                                <div className="venture-tag">Corporate & Strategy</div>
+                                <h3>Brand Diretto</h3>
+                                <p>Strategie avanzate di posizionamento e performance marketing per aziende che vogliono scalare.</p>
+                                <Button variant="secondary" onClick={() => window.location.href = '/ventures'} icon>Scopri Brand Diretto</Button>
+                            </div>
+                        </Card>
+                    </div>
+                </div>
+            </section>
+
+            {/* Proof / Credibility Section */}
+            <section className="section section-bg-alt proof-section">
+                <div className="container">
+                    <div className="section-header">
+                        <h2>Cosa aspettarsi</h2>
+                    </div>
+                    <div className="grid-3">
+                        <div className="proof-item">
+                            <h4>Cosa ottieni in 2 settimane</h4>
+                            <p>Una diagnosi completa, una roadmap strategica e i primi asset pronti al lancio. Nessun documento inutile di 100 pagine.</p>
+                        </div>
+                        <div className="proof-item">
+                            <h4>Come lavoro</h4>
+                            <p>Sprint settimanali, report asincroni, call solo quando necessario. Rispetto il tuo tempo e focalizzo l'energia sull'output.</p>
+                        </div>
+                        <div className="proof-item">
+                            <h4>Per chi è questo metodo</h4>
+                            <p>Founder e PMI che hanno prodotto, mercato e budget, ma mancano di sistema. Non adatto a chi cerca "trucchi" magici.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            {/* Built with AI Logic Section */}
+            <section className="section ai-logic-section">
+                <div className="container ai-logic-container">
+                    <div className="ai-content">
+                        <Sparkles size={32} className="text-primary mb-4" />
+                        <h2>Questo sito è costruito interamente con AI.</h2>
+                        <p>Dalla UI al copy, fino al codice. Non per "fare scena", ma per dimostrare che so trasformare strumenti AI in output reali: veloci, puliti, misurabili.</p>
+                        <span>Vuoi lo stesso approccio sul tuo business?</span>
+                        <div className="mt-4">
+                            <Button variant="secondary" onClick={() => window.location.href = '/contatti'}>Prenota una call</Button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            {/* Final CTA */}
+            <section className="section cta-section bg-dark text-white">
+                <div className="container text-center">
+                    <h2 className="text-white">Pronto a mettere ordine e crescere?</h2>
+                    <p className="text-gray-300 max-w-2xl mx-auto mb-8">
+                        Una call conoscitiva di 20 minuti per capire contesto, priorità e la tua prossima mossa vincente.
+                    </p>
+                    <div className="flex gap-4 justify-center">
+                        <Button variant="primary" onClick={() => window.location.href = '/contatti'}>Prenota call</Button>
+                        <Button variant="secondary" className="btn-inverse" onClick={() => window.location.href = 'mailto:ciao@giorgiopluchino.it'}>Scrivimi</Button>
                     </div>
                 </div>
             </section>
