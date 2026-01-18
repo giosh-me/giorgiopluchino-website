@@ -66,11 +66,11 @@ const Contatti = () => {
                         <div className="contact-meta mt-12">
                             <div className="flex items-center gap-4 mb-4">
                                 <Mail className="text-primary" />
-                                <a href="mailto:hello@giorgiopluchino.com">hello@giorgiopluchino.com</a>
+                                <a href="mailto:ciao@giorgiopluchino.it">ciao@giorgiopluchino.it</a>
                             </div>
                             <div className="flex items-center gap-4">
                                 <Linkedin className="text-primary" />
-                                <a href="#">LinkedIn Profile</a>
+                                <a href="https://www.linkedin.com/in/giorgiopluchino/" target="_blank" rel="noopener noreferrer">LinkedIn Profile</a>
                             </div>
                         </div>
                     </div>

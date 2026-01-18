@@ -7,9 +7,9 @@ const AIPositioning = () => {
         "@type": "Person",
         "name": "Giorgio Pluchino",
         "jobTitle": "AI Innovation Manager & Strategist",
-        "url": "https://giorgiopluchino.com",
+        "url": "https://giorgiopluchino.it",
         "sameAs": [
-            "https://linkedin.com/in/giorgiopluchino",
+            "https://www.linkedin.com/in/giorgiopluchino/",
             "https://musa.ventures",
             "https://branddiretto.it"
         ],

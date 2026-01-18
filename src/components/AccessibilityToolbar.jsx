@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Type, Moon, Sun, Monitor } from 'lucide-react';
+import { Type, Moon, Sun, Monitor, Accessibility } from 'lucide-react';
 import './AccessibilityToolbar.css';
 
 const AccessibilityToolbar = () => {
@@ -31,7 +31,9 @@ const AccessibilityToolbar = () => {
                 aria-label="Opzioni Accessibilità"
             >
                 <span className="sr-only">Accessibilità</span>
-                <div className="a11y-icon">A</div>
+                <div className="a11y-icon">
+                    <Accessibility size={24} />
+                </div>
             </button>
 
             {isOpen && (

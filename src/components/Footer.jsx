@@ -14,8 +14,8 @@ const Footer = () => {
                         <h4>Giorgio Pluchino</h4>
                         <p className="footer-tagline">Strategia, posizionamento e AI applicata.</p>
                         <div className="footer-socials">
-                            <a href="#" aria-label="LinkedIn"><Linkedin size={20} /></a>
-                            <a href="mailto:hello@giorgiopluchino.com" aria-label="Email"><Mail size={20} /></a>
+                            <a href="https://www.linkedin.com/in/giorgiopluchino/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><Linkedin size={20} /></a>
+                            <a href="mailto:ciao@giorgiopluchino.it" aria-label="Email"><Mail size={20} /></a>
                         </div>
                     </div>
 
