@@ -8,23 +8,28 @@ const ChiSono = () => {
     return (
         <div className="chi-sono-page">
             {/* Hero */}
-            <section className="section">
-                <div className="container">
-                    <h1 className="chi-sono-title">Strategia prima.<br />AI come leva.</h1>
-                    <div className="chi-sono-content">
-                        <p>
-                            Lavoro nel marketing dal 2012. Ho visto nascere e morire decine di "trend del momento".
-                            Mi sono reso conto che l'unica cosa che resta è la <strong>strategia</strong>.
-                        </p>
-                        <p>
-                            Oggi utilizzo l'AI non per sostituire il pensiero umano, ma per amplificarlo.
-                            La mia ossessione è l'approccio ecosistemico: non guardo mai il singolo canale (Facebook, Google, Email)
-                            isolato dal resto. Guardo i margini, l'offerta, i processi interni ed esterni.
-                        </p>
-                        <p>
-                            L'AI mi permette di essere veloce, preciso e scalabile. Ma è la strategia che guida la macchina.
-                            Senza direzione, la velocità è solo un modo più rapido per schiantarsi.
-                        </p>
+            <section className="section about-hero-section">
+                <div className="container about-grid">
+                    <div className="about-image-wrapper">
+                        <img src="/assets/giorgio-photo.jpg" alt="Giorgio Pluchino" className="about-image" />
+                    </div>
+                    <div className="about-text-content">
+                        <h1 className="chi-sono-title">Strategia prima.<br />AI come leva.</h1>
+                        <div className="chi-sono-content">
+                            <p>
+                                Lavoro nel marketing dal 2012. Ho visto nascere e morire decine di "trend del momento".
+                                Mi sono reso conto che l'unica cosa che resta è la <strong>strategia</strong>.
+                            </p>
+                            <p>
+                                Oggi utilizzo l'AI non per sostituire il pensiero umano, ma per amplificarlo.
+                                La mia ossessione è l'approccio ecosistemico: non guardo mai il singolo canale (Facebook, Google, Email)
+                                isolato dal resto. Guardo i margini, l'offerta, i processi interni ed esterni.
+                            </p>
+                            <p>
+                                L'AI mi permette di essere veloce, preciso e scalabile. Ma è la strategia che guida la macchina.
+                                Senza direzione, la velocità è solo un modo più rapido per schiantarsi.
+                            </p>
+                        </div>
                     </div>
                 </div>
             </section>
