@@ -31,32 +31,34 @@ const AccessibilityToolbar = () => {
                 aria-label="Opzioni Accessibilità"
             >
                 <span className="sr-only">Accessibilità</span>
-                <div className="a11y-icon">
-                    <Accessibility size={24} />
-                </div>
+                <Accessibility size={28} strokeWidth={1.5} />
             </button>
 
             {isOpen && (
                 <div className="a11y-panel">
-                    <h4>Opzioni Accessibilità</h4>
-
                     <div className="a11y-control">
-                        <span>Dimensione Testo</span>
+                        <div className="control-header">
+                            <Type size={16} />
+                            <span>Testo</span>
+                        </div>
                         <div className="btn-group">
-                            <button onClick={decreaseFont} aria-label="Diminuisci testo">A-</button>
-                            <button onClick={resetFont} aria-label="Resetta testo">Reset</button>
-                            <button onClick={increaseFont} aria-label="Aumenta testo">A+</button>
+                            <button onClick={decreaseFont} aria-label="Diminuisci testo">-</button>
+                            <button onClick={resetFont} aria-label="Resetta testo">100%</button>
+                            <button onClick={increaseFont} aria-label="Aumenta testo">+</button>
                         </div>
                     </div>
 
                     <div className="a11y-control">
-                        <span>Contrasto</span>
+                        <div className="control-header">
+                            {highContrast ? <Sun size={16} /> : <Moon size={16} />}
+                            <span>Contrasto</span>
+                        </div>
                         <button
                             className={`toggle-btn ${highContrast ? 'active' : ''}`}
                             onClick={() => setHighContrast(!highContrast)}
                             aria-label="Attiva Alto Contrasto"
                         >
-                            {highContrast ? 'Disattiva Alto Contrasto' : 'Attiva Alto Contrasto'}
+                            {highContrast ? 'Standard' : 'Alto Contrasto'}
                         </button>
                     </div>
                 </div>
