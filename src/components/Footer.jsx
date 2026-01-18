@@ -1,3 +1,4 @@
+import React from 'react';
 import { Link } from 'react-router-dom';
 import { Linkedin, Mail, Sparkles } from 'lucide-react';
 import './Footer.css';
