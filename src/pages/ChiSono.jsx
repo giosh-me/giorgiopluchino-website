@@ -1,10 +1,12 @@
-import React from 'react';
+import { useNavigate } from 'react-router-dom';
 import Button from '../components/Button';
 import Card from '../components/Card';
 import { CheckCircle, XCircle, Zap, Shield, Eye } from 'lucide-react';
 import './ChiSono.css';
 
 const ChiSono = () => {
+    const navigate = useNavigate();
+
     return (
         <div className="chi-sono-page">
             {/* Hero */}
@@ -78,7 +80,7 @@ const ChiSono = () => {
                 <div className="container">
                     <h2>Vuoi lavorare con questo approccio?</h2>
                     <div className="mt-4">
-                        <Button onClick={() => window.location.href = '/contatti'}>Parliamone</Button>
+                        <Button onClick={() => navigate('/contatti')}>Parliamone</Button>
                     </div>
                 </div>
             </section>

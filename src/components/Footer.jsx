@@ -1,4 +1,4 @@
-import React from 'react';
+import { Link } from 'react-router-dom';
 import { Linkedin, Mail, Sparkles } from 'lucide-react';
 import './Footer.css';
 
@@ -22,10 +22,10 @@ const Footer = () => {
                     <div className="footer-links">
                         <div className="footer-col">
                             <h5>Esplora</h5>
-                            <a href="/">Home</a>
-                            <a href="/chi-sono">Chi Sono</a>
-                            <a href="/metodo">Metodo</a>
-                            <a href="/ventures">Ventures</a>
+                            <Link to="/">Home</Link>
+                            <Link to="/chi-sono">Chi Sono</Link>
+                            <Link to="/metodo">Metodo</Link>
+                            <Link to="/ventures">Ventures</Link>
                         </div>
 
                         <div className="footer-col">

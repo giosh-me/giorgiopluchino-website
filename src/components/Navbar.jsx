@@ -1,10 +1,10 @@
-import React, { useState, useEffect } from 'react';
-import { NavLink, Link } from 'react-router-dom';
+import { useNavigate, NavLink, Link } from 'react-router-dom';
 import { Menu, X } from 'lucide-react';
 import Button from './Button';
 import './Navbar.css';
 
 const Navbar = () => {
+    const navigate = useNavigate();
     const [scrolled, setScrolled] = useState(false);
     const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
@@ -45,7 +45,7 @@ const Navbar = () => {
                             </li>
                         ))}
                     </ul>
-                    <Button variant="primary" className="navbar-cta" onClick={() => window.location.href = '/contatti'}>
+                    <Button variant="primary" className="navbar-cta" onClick={() => navigate('/contatti')}>
                         Prenota consulenza
                     </Button>
                 </nav>
@@ -72,7 +72,7 @@ const Navbar = () => {
                         <li>
                             <Button variant="primary" className="mobile-cta" onClick={() => {
                                 setMobileMenuOpen(false);
-                                window.location.href = '/contatti';
+                                navigate('/contatti');
                             }}>
                                 Prenota consulenza
                             </Button>

@@ -1,9 +1,11 @@
-import React from 'react';
+import { useNavigate } from 'react-router-dom';
 import Button from '../components/Button';
 import { ArrowUpRight } from 'lucide-react';
 import './Ventures.css';
 
 const Ventures = () => {
+    const navigate = useNavigate();
+
     return (
         <div className="ventures-page">
             <section className="section text-center">
@@ -69,7 +71,7 @@ const Ventures = () => {
                 <div className="container">
                     <h3>Non sai quale strada scegliere?</h3>
                     <p className="mb-4">Prenota una call conoscitiva, capiamo insieme di cosa hai bisogno.</p>
-                    <Button variant="primary" onClick={() => window.location.href = '/contatti'}>Parliamone</Button>
+                    <Button variant="primary" onClick={() => navigate('/contatti')}>Parliamone</Button>
                 </div>
             </section>
         </div>
