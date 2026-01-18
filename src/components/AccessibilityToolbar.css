@@ -7,8 +7,8 @@
 }
 
 .a11y-toggle {
-    width: 50px;
-    height: 50px;
+    width: 48px;
+    height: 48px;
     border-radius: 50%;
     background-color: var(--color-primary);
     color: white;
@@ -16,25 +16,24 @@
     align-items: center;
     justify-content: center;
     box-shadow: var(--shadow-hover);
-    border: 2px solid white;
+    border: none;
     cursor: pointer;
-    font-weight: 700;
-    font-size: 1.25rem;
+    transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
 
 .a11y-toggle:hover {
-    transform: scale(1.1);
+    transform: scale(1.1) rotate(5deg);
 }
 
 .a11y-panel {
     position: absolute;
-    bottom: 70px;
+    bottom: 64px;
     left: 0;
-    width: 280px;
+    width: 240px;
     background-color: white;
-    border-radius: var(--radius-md);
+    border-radius: var(--radius-lg);
     box-shadow: var(--shadow-hover);
-    padding: 20px;
+    padding: 16px;
     border: 1px solid var(--color-border);
     animation: slideIn 0.3s ease;
 }
@@ -51,35 +50,38 @@
     }
 }
 
-.a11y-panel h4 {
-    margin-bottom: 16px;
-    font-size: 1rem;
-}
-
 .a11y-control {
     margin-bottom: 20px;
 }
 
-.a11y-control span {
-    display: block;
-    font-size: 0.9rem;
-    margin-bottom: 8px;
+.a11y-control:last-child {
+    margin-bottom: 0;
+}
+
+.control-header {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 12px;
+    color: var(--color-text-main);
+    font-size: 0.85rem;
     font-weight: 600;
 }
 
 .btn-group {
     display: flex;
-    gap: 8px;
+    gap: 4px;
 }
 
 .btn-group button {
     flex: 1;
-    padding: 8px;
+    padding: 6px;
     border: 1px solid var(--color-border);
     border-radius: var(--radius-sm);
     background-color: #F9FAFB;
     font-weight: 600;
     cursor: pointer;
+    font-size: 0.85rem;
 }
 
 .btn-group button:hover {
