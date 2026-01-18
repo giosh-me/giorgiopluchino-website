@@ -10,8 +10,8 @@ const AIPositioning = () => {
         "url": "https://giorgiopluchino.it",
         "sameAs": [
             "https://www.linkedin.com/in/giorgiopluchino/",
-            "https://musa.ventures",
-            "https://branddiretto.it"
+            "https://musaholding.it",
+            "https://branddiretto.com"
         ],
         "knowsAbout": [
             "Artificial Intelligence",
