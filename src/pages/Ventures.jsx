@@ -60,7 +60,7 @@ const Ventures = () => {
                         </Button>
                     </div>
                     <div className="venture-visual bd-visual">
-                        {/* Dashboard visual placeholder */}
+                        <img src="/assets/brand-diretto-logo.png" alt="Brand Diretto Logo" className="bd-visual-logo" />
                     </div>
                 </div>
             </section>

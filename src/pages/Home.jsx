@@ -131,7 +131,9 @@ const Home = () => {
                         <Card className="venture-card large-card">
                             <div className="venture-content">
                                 <div className="venture-tag">Corporate & Strategy</div>
-                                <h3>Brand Diretto</h3>
+                                <div className="venture-logo-box">
+                                    <img src="/assets/brand-diretto-logo.png" alt="Brand Diretto Logo" className="venture-logo-img" />
+                                </div>
                                 <p>Strategie avanzate di posizionamento e performance marketing per aziende che vogliono scalare.</p>
                                 <Button variant="secondary" onClick={() => window.location.href = '/ventures'} icon>Scopri Brand Diretto</Button>
                             </div>
