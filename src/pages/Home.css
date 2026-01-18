@@ -1,0 +1,133 @@
+/* Hero */
+.hero-section {
+    padding: 120px 0 100px;
+    background-color: var(--color-bg);
+    /* Optional subtle gradient or pattern could go here */
+}
+
+.hero-content {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.hero-title {
+    font-size: 4rem;
+    letter-spacing: -0.04em;
+    margin-bottom: 32px;
+}
+
+.text-primary {
+    color: var(--color-primary);
+}
+
+.hero-subtitle {
+    font-size: 1.25rem;
+    color: var(--color-text-secondary);
+    line-height: 1.6;
+    max-width: 600px;
+    margin: 0 auto 48px;
+}
+
+.hero-actions {
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    flex-wrap: wrap;
+}
+
+/* Metrics */
+.metrics-section {
+    padding: 60px 0;
+    border-top: 1px solid var(--color-border);
+    border-bottom: 1px solid var(--color-border);
+}
+
+.metrics-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 24px;
+}
+
+.metric-item {
+    text-align: center;
+    padding: 24px;
+}
+
+.metric-item h3 {
+    font-size: 2.5rem;
+    color: var(--color-primary);
+    margin-bottom: 8px;
+}
+
+.metric-item p {
+    font-weight: 600;
+    color: var(--color-text-main);
+    margin: 0;
+}
+
+/* Grids */
+.grid-4 {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 24px;
+}
+
+.grid-3 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 32px;
+}
+
+.icon-wrapper {
+    color: var(--color-primary);
+    margin-bottom: 16px;
+    padding: 12px;
+    background-color: var(--color-primary-light);
+    width: fit-content;
+    border-radius: var(--radius-md);
+}
+
+.section-header {
+    margin-bottom: 60px;
+    text-align: center;
+}
+
+.section-header p {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+    .hero-title {
+        font-size: 3rem;
+    }
+
+    .grid-4,
+    .metrics-grid,
+    .grid-3 {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 640px) {
+    .hero-title {
+        font-size: 2.5rem;
+    }
+
+    .grid-4,
+    .metrics-grid,
+    .grid-3 {
+        grid-template-columns: 1fr;
+    }
+
+    .hero-actions {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .hero-actions button {
+        width: 100%;
+    }
+}

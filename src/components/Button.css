@@ -1,0 +1,9 @@
+/* Styles are largely handled by global utilities in index.css, 
+   but specific component overrides can go here if needed */
+.btn svg {
+    transition: transform 0.2s ease;
+}
+
+.btn:hover svg {
+    transform: translateX(4px);
+}

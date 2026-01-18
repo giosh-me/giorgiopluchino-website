@@ -1,0 +1,141 @@
+.a11y-toolbar {
+    position: fixed;
+    left: 20px;
+    bottom: 20px;
+    z-index: 9999;
+    font-family: sans-serif;
+}
+
+.a11y-toggle {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: var(--color-primary);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: var(--shadow-hover);
+    border: 2px solid white;
+    cursor: pointer;
+    font-weight: 700;
+    font-size: 1.25rem;
+}
+
+.a11y-toggle:hover {
+    transform: scale(1.1);
+}
+
+.a11y-panel {
+    position: absolute;
+    bottom: 70px;
+    left: 0;
+    width: 280px;
+    background-color: white;
+    border-radius: var(--radius-md);
+    box-shadow: var(--shadow-hover);
+    padding: 20px;
+    border: 1px solid var(--color-border);
+    animation: slideIn 0.3s ease;
+}
+
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.a11y-panel h4 {
+    margin-bottom: 16px;
+    font-size: 1rem;
+}
+
+.a11y-control {
+    margin-bottom: 20px;
+}
+
+.a11y-control span {
+    display: block;
+    font-size: 0.9rem;
+    margin-bottom: 8px;
+    font-weight: 600;
+}
+
+.btn-group {
+    display: flex;
+    gap: 8px;
+}
+
+.btn-group button {
+    flex: 1;
+    padding: 8px;
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-sm);
+    background-color: #F9FAFB;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.btn-group button:hover {
+    background-color: #E5E7EB;
+}
+
+.toggle-btn {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid var(--color-primary);
+    color: var(--color-primary);
+    border-radius: var(--radius-sm);
+    background-color: transparent;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.toggle-btn.active {
+    background-color: var(--color-primary);
+    color: white;
+}
+
+/* High Contrast Mode Overrides */
+body.high-contrast {
+    --color-primary: #FFFF00 !important;
+    /* Yellow */
+    --color-primary-dark: #FFD700 !important;
+    --color-primary-light: #000000 !important;
+
+    --color-text-main: #FFFFFF !important;
+    --color-text-secondary: #E5E5E5 !important;
+    --color-text-tertiary: #CCCCCC !important;
+
+    --color-bg: #000000 !important;
+    --color-bg-alt: #111111 !important;
+    --color-bg-accent: #222222 !important;
+
+    --color-border: #FFFFFF !important;
+    --color-border-light: #AAAAAA !important;
+}
+
+body.high-contrast .card,
+body.high-contrast .navbar,
+body.high-contrast .navbar-mobile,
+body.high-contrast .footer {
+    background-color: #000000 !important;
+    border-color: #FFFFFF !important;
+    color: #FFFFFF !important;
+}
+
+body.high-contrast button {
+    border: 2px solid white !important;
+}
+
+body.high-contrast .btn-primary {
+    background-color: #000000 !important;
+    color: #FFFF00 !important;
+    border-color: #FFFF00 !important;
+}

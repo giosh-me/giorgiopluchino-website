@@ -1,0 +1,94 @@
+.mb-4 {
+    margin-bottom: 24px;
+}
+
+.max-w-600 {
+    max-width: 600px;
+}
+
+/* Split Layout */
+.split-layout {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+    align-items: center;
+}
+
+.split-layout.reverse {
+    direction: rtl;
+    /* Quick hack for order, better to use grid-area or order property */
+}
+
+.split-layout.reverse .venture-info {
+    direction: ltr;
+    /* Reset text direction */
+}
+
+.venture-info {
+    padding: 40px 0;
+}
+
+.venture-label {
+    font-size: 0.85rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    display: block;
+    margin-bottom: 16px;
+    opacity: 0.8;
+}
+
+.venture-list {
+    margin: 24px 0;
+    padding-left: 20px;
+}
+
+.venture-list li {
+    list-style: disc;
+    margin-bottom: 8px;
+    font-weight: 500;
+}
+
+/* Musa Theme */
+.section-musa {
+    background-color: #111111;
+    color: white;
+}
+
+.text-gray-300 {
+    color: #D1D5DB;
+}
+
+.musa-visual {
+    background: linear-gradient(135deg, #FF0080 0%, #7928CA 100%);
+    border-radius: var(--radius-xl);
+    height: 400px;
+    width: 100%;
+}
+
+/* Brand Diretto Theme */
+.section-bd {
+    background-color: #FFFFFF;
+}
+
+.bd-visual {
+    background: linear-gradient(135deg, #0066FF 0%, #00C6FF 100%);
+    border-radius: var(--radius-xl);
+    height: 400px;
+    width: 100%;
+}
+
+.dark-list li {
+    color: var(--color-text-secondary);
+}
+
+@media (max-width: 768px) {
+    .split-layout {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+
+    .split-layout.reverse {
+        direction: ltr;
+    }
+}

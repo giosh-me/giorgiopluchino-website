@@ -1,0 +1,67 @@
+.chi-sono-title {
+    font-size: 3.5rem;
+    margin-bottom: 40px;
+}
+
+.chi-sono-content {
+    max-width: 800px;
+    font-size: 1.25rem;
+    line-height: 1.8;
+    color: var(--color-text-secondary);
+}
+
+.chi-sono-content strong {
+    color: var(--color-text-main);
+    font-weight: 600;
+}
+
+.chi-sono-content p {
+    margin-bottom: 24px;
+}
+
+/* Pillars */
+.text-center {
+    text-align: center;
+}
+
+.mb-60 {
+    margin-bottom: 60px;
+}
+
+.pillar-icon {
+    color: var(--color-primary);
+    margin-bottom: 20px;
+}
+
+.pillar-icon svg {
+    stroke-width: 1.5;
+}
+
+/* Don't do list */
+.dont-do-box {
+    background-color: #FFF5F5;
+    border: 1px solid #FED7D7;
+    padding: 40px;
+    border-radius: var(--radius-lg);
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.dont-do-list {
+    margin-top: 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.dont-do-list li {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    font-size: 1.1rem;
+    font-weight: 500;
+}
+
+.text-red {
+    color: #E53E3E;
+}

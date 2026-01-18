@@ -1,0 +1,112 @@
+.metodo-title {
+    font-size: 3rem;
+    margin-bottom: 24px;
+}
+
+.metodo-subtitle {
+    font-size: 1.25rem;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.steps-container {
+    display: flex;
+    flex-direction: column;
+    gap: 80px;
+    max-width: 900px;
+    margin: 0 auto;
+    position: relative;
+}
+
+/* Vertical line connecting steps (optional, could add ::before) */
+
+.step-row {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+.step-row.reverse {
+    flex-direction: row-reverse;
+    text-align: right;
+}
+
+.step-row.reverse .step-content {
+    align-items: flex-end;
+}
+
+.step-number {
+    font-size: 5rem;
+    font-weight: 800;
+    color: #E5E7EB;
+    line-height: 1;
+}
+
+.step-content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.step-icon {
+    width: 48px;
+    height: 48px;
+    background-color: var(--color-primary-light);
+    color: var(--color-primary);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 16px 0;
+}
+
+.step-row.reverse .step-icon {
+    margin-left: auto;
+    margin-right: 0;
+}
+
+.outputs-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+}
+
+.output-card {
+    display: flex !important;
+    flex-direction: row !important;
+    align-items: center;
+    gap: 16px;
+    padding: 24px !important;
+    font-weight: 600;
+}
+
+.mb-10 {
+    margin-bottom: 40px;
+}
+
+@media (max-width: 768px) {
+
+    .step-row,
+    .step-row.reverse {
+        flex-direction: column;
+        text-align: center;
+        gap: 16px;
+    }
+
+    .step-row.reverse .step-content {
+        align-items: center;
+    }
+
+    .step-row.reverse .step-icon {
+        margin: 16px auto;
+    }
+
+    .step-icon {
+        margin: 16px auto;
+    }
+
+    .outputs-grid {
+        grid-template-columns: 1fr;
+    }
+}
