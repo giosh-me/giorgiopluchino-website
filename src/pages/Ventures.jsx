@@ -30,7 +30,7 @@ const Ventures = () => {
                             <li>Eventi Live & Festival</li>
                             <li>Format originali & Produzioni</li>
                         </ul>
-                        <Button variant="secondary" className="mt-4" onClick={() => window.open('https://musa.example.com', '_blank')}>
+                        <Button variant="secondary" className="mt-4" onClick={() => window.open('https://musaholding.it', '_blank')}>
                             Vai al sito <ArrowUpRight size={16} />
                         </Button>
                     </div>
@@ -55,7 +55,7 @@ const Ventures = () => {
                             <li>Gestione Performance (PPC)</li>
                             <li>Integrazione Dati & CRM</li>
                         </ul>
-                        <Button variant="primary" className="mt-4" onClick={() => window.open('https://branddiretto.example.com', '_blank')}>
+                        <Button variant="primary" className="mt-4" onClick={() => window.open('https://branddiretto.com', '_blank')}>
                             Vai al sito <ArrowUpRight size={16} />
                         </Button>
                     </div>
