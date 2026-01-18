@@ -31,7 +31,7 @@ const AccessibilityToolbar = () => {
                 aria-label="Opzioni Accessibilità"
             >
                 <span className="sr-only">Accessibilità</span>
-                <Accessibility size={28} strokeWidth={1.5} />
+                <Accessibility size={32} strokeWidth={1.5} />
             </button>
 
             {isOpen && (
