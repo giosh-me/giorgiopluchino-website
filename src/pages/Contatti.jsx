@@ -12,13 +12,32 @@ const Contatti = () => {
         message: ''
     });
     const [submitted, setSubmitted] = useState(false);
+    const [isSubmitting, setIsSubmitting] = useState(false);
 
-    const handleSubmit = (e) => {
+    const handleSubmit = async (e) => {
         e.preventDefault();
-        // Simulate submission
-        setTimeout(() => {
-            setSubmitted(true);
-        }, 1000);
+        setIsSubmitting(true);
+
+        try {
+            const response = await fetch('/api/send-email', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify(formData),
+            });
+
+            if (response.ok) {
+                setSubmitted(true);
+            } else {
+                alert('Si è verificato un errore durante l\'invio del messaggio. Riprova più tardi.');
+            }
+        } catch (error) {
+            console.error('Error submitting form:', error);
+            alert('Errore di connessione. Controlla la tua connessione e riprova.');
+        } finally {
+            setIsSubmitting(false);
+        }
     };
 
     const handleChange = (e) => {
@@ -146,8 +165,8 @@ const Contatti = () => {
                                             ></textarea>
                                         </div>
 
-                                        <Button type="submit" variant="primary" className="w-full">
-                                            Invia Messaggio
+                                        <Button type="submit" variant="primary" className="w-full" disabled={isSubmitting}>
+                                            {isSubmitting ? 'Invio in corso...' : 'Invia Messaggio'}
                                         </Button>
                                     </form>
                                 </>
