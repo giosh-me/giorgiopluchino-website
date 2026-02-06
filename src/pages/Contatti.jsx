@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import Seo from '../components/Seo';
 import Button from '../components/Button';
 import Card from '../components/Card';
 import { Mail, Linkedin, MapPin, CheckCircle } from 'lucide-react';
@@ -46,6 +47,11 @@ const Contatti = () => {
 
     return (
         <div className="contatti-page section">
+            <Seo
+                title="Contatti - Parliamo di strategia"
+                description="Prenota una call o scrivimi per discutere il tuo progetto. Analisi, Strategia AI-Driven e Crescita. Giorgio Pluchino."
+                path="/contatti"
+            />
             <div className="container">
                 <div className="contatti-grid">
 

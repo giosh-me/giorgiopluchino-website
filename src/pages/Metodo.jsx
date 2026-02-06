@@ -1,4 +1,5 @@
 import React from 'react';
+import Seo from '../components/Seo';
 import Card from '../components/Card';
 import { Search, Map, Settings, Zap, Check } from 'lucide-react';
 import './Metodo.css';
@@ -6,6 +7,11 @@ import './Metodo.css';
 const Metodo = () => {
     return (
         <div className="metodo-page">
+            <Seo
+                title="Il Metodo - Ingegneria della Crescita"
+                description="Scopri il framework di Giorgio Pluchino: Diagnosi, Posizionamento, Sistema, Iterazione. Un processo scientifico per scalare il tuo business."
+                path="/metodo"
+            />
             <section className="section bg-light">
                 <div className="container text-center">
                     <h1 className="metodo-title">Un processo semplice<br />Chiarezza → Priorità → Sistema</h1>

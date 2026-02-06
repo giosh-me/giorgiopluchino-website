@@ -1,4 +1,5 @@
 import React from 'react';
+import Seo from '../components/Seo';
 import { useNavigate } from 'react-router-dom';
 import Button from '../components/Button';
 import { ArrowUpRight } from 'lucide-react';
@@ -9,6 +10,11 @@ const Ventures = () => {
 
     return (
         <div className="ventures-page">
+            <Seo
+                title="Musa & Brand Diretto - Ventures"
+                description="Le aziende di Giorgio Pluchino: Musa (Creative Tech & Eventi) e Brand Diretto (Performance Strategy & Automation)."
+                path="/ventures"
+            />
             <section className="section text-center">
                 <div className="container">
                     <h1 className="mb-4">Le due anime del business</h1>
@@ -38,7 +44,7 @@ const Ventures = () => {
                         </Button>
                     </div>
                     <div className="venture-visual musa-visual">
-                        <img src="/assets/musa-logo.png" alt="Musa Logo" className="musa-visual-logo" />
+                        <img src="/assets/musa-logo.png" alt="Musa - Creative Tech Agency Logo" className="musa-visual-logo" />
                     </div>
                 </div>
             </section>
@@ -63,7 +69,7 @@ const Ventures = () => {
                         </Button>
                     </div>
                     <div className="venture-visual bd-visual">
-                        <img src="/assets/brand-diretto-logo.png" alt="Brand Diretto Logo" className="bd-visual-logo" />
+                        <img src="/assets/brand-diretto-logo.png" alt="Brand Diretto - Performance Strategy Logo" className="bd-visual-logo" />
                     </div>
                 </div>
             </section>

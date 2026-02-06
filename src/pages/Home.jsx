@@ -1,5 +1,6 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
+import Seo from '../components/Seo';
 import Button from '../components/Button';
 import Card from '../components/Card';
 import { ArrowRight, BarChart, Server, Zap, Layers, Sparkles } from 'lucide-react';
@@ -10,6 +11,11 @@ const Home = () => {
 
     return (
         <div className="home-page">
+            <Seo
+                title="AI Innovation Manager & Strategist"
+                description="Ingegneria della crescita per aziende e professionisti. Unisco AI, dati e posizionamento per strategie di marketing scalabili. Founder di Musa e Brand Diretto."
+                path="/"
+            />
             {/* Hero Section */}
             <section className="hero-section">
                 <div className="container hero-container">
@@ -125,7 +131,7 @@ const Home = () => {
                             <div className="venture-content">
                                 <div className="venture-tag">Creative Tech</div>
                                 <div className="venture-logo-box">
-                                    <img src="/assets/musa-logo.png" alt="Musa Logo" className="venture-logo-img" />
+                                    <img src="/assets/musa-logo.png" alt="Musa - Creative Tech Agency Logo" className="venture-logo-img" />
                                 </div>
                                 <p>La fucina creativa per creator, eventi ed experience indimenticabili. Uniamo talenti e brand.</p>
                                 <Button variant="secondary" onClick={() => navigate('/ventures')} icon>Scopri Musa</Button>
@@ -135,7 +141,7 @@ const Home = () => {
                             <div className="venture-content">
                                 <div className="venture-tag">Corporate & Strategy</div>
                                 <div className="venture-logo-box">
-                                    <img src="/assets/brand-diretto-logo.png" alt="Brand Diretto Logo" className="venture-logo-img" />
+                                    <img src="/assets/brand-diretto-logo.png" alt="Brand Diretto - Performance Strategy Logo" className="venture-logo-img" />
                                 </div>
                                 <p>Strategie avanzate di posizionamento e performance marketing per aziende che vogliono scalare.</p>
                                 <Button variant="secondary" onClick={() => navigate('/ventures')} icon>Scopri Brand Diretto</Button>

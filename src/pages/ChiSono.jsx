@@ -1,5 +1,6 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
+import Seo from '../components/Seo';
 import Button from '../components/Button';
 import Card from '../components/Card';
 import { CheckCircle, XCircle, Zap, Shield, Eye } from 'lucide-react';
@@ -10,11 +11,16 @@ const ChiSono = () => {
 
     return (
         <div className="chi-sono-page">
+            <Seo
+                title="Chi Sono - La mia storia"
+                description="Innovation Manager, Strategist e Imprenditore. Dal 2012 nel marketing, oggi unisco AI e strategia per creare valore reale. Scopri i miei valori e il mio approccio."
+                path="/chi-sono"
+            />
             {/* Hero */}
             <section className="section about-hero-section">
                 <div className="container about-grid">
                     <div className="about-image-wrapper">
-                        <img src="/assets/giorgio-photo.jpg" alt="Giorgio Pluchino" className="about-image" />
+                        <img src="/assets/giorgio-photo.jpg" alt="Giorgio Pluchino - AI Innovation Manager & Strategist" className="about-image" />
                     </div>
                     <div className="about-text-content">
                         <h1 className="chi-sono-title">Strategia prima.<br />AI come leva.</h1>
